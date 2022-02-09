@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="multiplayer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Multiplayer Dice Pontoon</title>
-</head>
-<body>
-<div class="wrapper">
-    <h1>Welcome to Dice Pontoon</h1>
-    <nav>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Welcome to Dice Pontoon</h1>
+      <nav>
         <ul>
-            <li><a href="index.html">Index</a></li>
-            <li><a href="singleplayer.html">Singleplayer</a></li>
-            <li><a href="multiplayer.html">Multiplayer</a></li>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="singleplayer.html">Singleplayer</a></li>
+          <li><a href="multiplayer.html">Multiplayer</a></li>
         </ul>
-    </nav>
-<h2>Multiplayer!</h2>
-<h3 id="gameBanner"></h3>
-<button id="replay" style="visibility: hidden">Replay?</button>
+      </nav>
+      <h2>Multiplayer!</h2>
+      <h3 id="gameBanner"></h3>
+      <button id="replay" style="visibility: hidden">Replay?</button>
 
-<div id="gameBox">
-    <div id="playerOneBox">
-        <h2 id="player1">Player 1</h2>
-        <p id="playerOneWins">Wins: 0</p>
-        <p id="playerOneLosses">Losses: 0</p>
-        <p id="playerOneScore">Score: 0</p>
-        <button id="playerOneRoll">Start the game!</button>
-        <button id="playerOnePass">Pass to the other player!</button>
+      <div id="gameBox">
+        <div id="playerOneBox">
+          <h2 id="player1">Player 1</h2>
+          <p id="playerOneWins">Wins: 0</p>
+          <p id="playerOneLosses">Losses: 0</p>
+          <p id="playerOneScore">Score: 0</p>
+          <button id="playerOneRoll">Start the game!</button>
+          <button id="playerOnePass">Pass to the other player!</button>
+        </div>
+        <div class="diceBlock">
+          <img
+            src=""
+            alt="an image of a die"
+            id="dieImage"
+            style="visibility: hidden"
+          />
+          <p id="dieValue"></p>
+        </div>
+        <div id="playerTwoBox">
+          <h2 id="player2">Player 2</h2>
+          <p id="playerTwoWins">Wins: 0</p>
+          <p id="playerTwoLosses">Losses: 0</p>
+          <p id="playerTwoScore">Score: 0</p>
+          <button id="playerTwoRoll" disabled>Start the game!</button>
+          <button id="playerTwoPass" disabled>Pass to the other player!</button>
+        </div>
+      </div>
     </div>
-    <div class="diceBlock">
-        <img src="" alt="an image of a die" id="dieImage" style="visibility: hidden">
-        <p id="dieValue"></p>
-    </div>
-    <div id="playerTwoBox">
-        <h2 id="player2">Player 2</h2>
-        <p id="playerTwoWins">Wins: 0</p>
-        <p id="playerTwoLosses">Losses: 0</p>
-        <p id="playerTwoScore">Score: 0</p>
-        <button id="playerTwoRoll" disabled>Start the game!</button>
-        <button id="playerTwoPass" disabled>Pass to the other player!</button>
-    </div>
-</div>
-</div>
-</body>
-<script src="multiplayer.js"></script>
+  </body>
+  <script src="multiplayer.js"></script>
 </html>

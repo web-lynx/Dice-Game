@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Singleplayer Dice Pontoon</title>
-</head>
-<body>
-    <h1>Welcome to Dice Pontoon</h1>
-    <nav>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Welcome to Dice Pontoon</h1>
+      <nav>
         <ul>
-            <li><a href="index.html">Index</a></li>
-            <li><a href="singleplayer.html">Singleplayer</a></li>
-            <li><a href="multiplayer.html">Multiplayer</a></li>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="singleplayer.html">Singleplayer</a></li>
+          <li><a href="multiplayer.html">Multiplayer</a></li>
         </ul>
-    </nav>
-    <h2>Singleplayer!</h2>
-    <div id="playerBox">
-    <img src="" alt="an image of a die" id="diceImage" style="visibility: hidden">
-    <p id="score"></p>
+      </nav>
+      <h2>Singleplayer!</h2>
+      <div id="gamebox">
+        <div id="playerOneBox">
+          <p id="score">Score: 0</p>
+          <img
+            src=""
+            alt="an image of a die"
+            id="diceImage"
+            style="visibility: hidden"
+          />
+          <button id="roll">Start Game</button>
+        </div>
+      </div>
+      <section id="rules">
+        <h2>The Rules</h2>
+        <p>Score 21 to win, but if you hit a 1 before that, you lose!</p>
+      </section>
     </div>
-    <button id="roll">Start Game</button>
-    
-</body>
-<script src="singleplayer.js"></script>
+  </body>
+  <script src="singleplayer.js"></script>
 </html>
-
-<section id="rules">
-    <h2>The Rules</h2>
-    <p>Score 21 to win, but if you hit a 1 before that, you lose!</p>
-</section>

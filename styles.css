@@ -1,18 +1,95 @@
-#gamebox {
-    display: flex;
-    flex-flow: column wrap;
+* {
+  font-family: sans-serif;
 }
 
-#playerBox, #playerBox1, #playerBox2 {
-    max-height: 20vw;
-    min-height: 20vw;
-    max-width: 50vw;
+body {
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#gameBox {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 3rem;
+}
+
+#playerOneBox,
+#playerTwoBox {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  min-height: 50vh;
+  min-width: 20vw;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#gameBox button {
+  min-width: 10rem;
+}
+
+.diceBlock {
+  max-height: 20vw;
+  min-height: 20vw;
+  max-width: 50vw;
+  align-content: center;
 }
 
 img {
-    max-height: 15vw;
+  max-height: 15vw;
 }
 
 ul {
-    display: inline;
+  display: inline;
+}
+
+#score {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
